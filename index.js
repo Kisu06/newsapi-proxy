@@ -7,7 +7,7 @@ app.get('/news', async (req, res) => {
   try {
     const response = await axios.get('https://newsapi.org/v2/top-headlines', {
       params: {
-        country: 'in',
+        country: 'us',
         apiKey: process.env.NEWS_API_KEY || 'e2bd4a8d3dda499099987475844e0a51' // fallback for local testing
       }
     });
